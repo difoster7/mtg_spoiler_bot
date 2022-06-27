@@ -1,0 +1,17 @@
+
+
+slash command - spoil(set_code, rarity)
+
+after command get list of all rarity cards currently on scryfall of the set
+    save this list as 'spoiled'
+
+get list of all rarity cards, if longer, post images of new ones
+    if image unavailable post text?
+
+slash command - end_spoilers(set_code)
+    delete all spoiled cards and stop looking for new ones
+    or report set_code invalid (if not currently spoiling
+
+slash command - current_spoilers()
+    print all sets currently being spoiled.
+
