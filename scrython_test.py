@@ -7,9 +7,10 @@ print(test.card_count())
 
 rarity = 'm'
 
-test2 = scrython.cards.Search(q=f"set=stx, r>={rarity}")
+test2 = scrython.sets.Sets()
 
-cards = test2.data()
+for set in test2.data():
+    if set.get('code') == 'lea':
+        print('it works!')
 
-for card in cards:
-    print(card['name'])
+
