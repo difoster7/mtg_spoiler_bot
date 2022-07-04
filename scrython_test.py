@@ -1,16 +1,16 @@
 import scrython
 #   https://github.com/NandaScott/Scrython/tree/master/docs
+from Rarity import Rarity
 
-test = scrython.Code(code="clb")
+r = Rarity.RARE
 
-print(test.card_count())
+foo = scrython.cards.Search(q=f"s=snc, r>={r.name}")
 
-rarity = 'm'
 
-test2 = scrython.sets.Sets()
+bar = [foo.data(0), foo.data(3)]
 
-for set in test2.data():
-    if set.get('code') == 'lea':
-        print('it works!')
+print([card for card in foo.data() if card not in bar])
+
+
 
 

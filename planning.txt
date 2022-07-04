@@ -26,9 +26,6 @@ set_spoiler class
     methods:    update_spoilers()
                 print_spoilers()
                 get_num_spoilers()
-                start_spoilers()
-                pause_spoilers()
-                stop_spoilers()
                 __str__() - prints set code, num spoilers, last spoiler, spoiler level
 
 mtg_spoilers class
@@ -37,4 +34,7 @@ mtg_spoilers class
     methods:    add_spoiler(set_code)
                 remove_spoiler(set_code)
                 list_spoilers()
+                start_spoilers()
+                pause_spoilers()
+                stop_spoilers()
 
